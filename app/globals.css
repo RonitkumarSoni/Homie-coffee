@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #00735C;
+  --foreground: #ffffff;
+
+  /* Typography Scale (fluid, clamp-based) */
+  --text-display: clamp(3rem, 8vw, 7rem);
+  --text-h1: clamp(2.5rem, 6vw, 5.5rem);
+  --text-h2: clamp(2rem, 4.5vw, 4rem);
+  --text-h3: clamp(1.5rem, 3vw, 2.5rem);
+  --text-h4: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body-lg: clamp(1rem, 1.5vw, 1.25rem);
+  --text-body: clamp(0.875rem, 1.2vw, 1rem);
+  --text-sm: clamp(0.75rem, 1vw, 0.875rem);
+  --text-xs: clamp(0.625rem, 0.8vw, 0.75rem);
+
+  /* Spacing */
+  --section-py: clamp(4rem, 10vw, 8rem);
+  --container-px: clamp(1rem, 4vw, 2rem);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  line-height: 1.1;
+}
+
+/* Display headings use the premium Cormorant font */
+.font-display {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* Improved body text defaults */
+p {
+  line-height: 1.7;
+}
+
+/* Utility: hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth text rendering for large type */
+.text-smooth {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Text shadow for readability over images */
+.text-shadow {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-heavy {
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+}
