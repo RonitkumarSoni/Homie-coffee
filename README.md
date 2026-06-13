@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Homie Coffee Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;"/>
+  <img src="./image.png" alt="Homie Coffee Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;"/>
 
   <h1>☕ Homie Coffee</h1>
   <p><b>An Awwwards-Style, Premium Web Experience</b></p>
